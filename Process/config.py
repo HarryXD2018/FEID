@@ -1,8 +1,5 @@
 import os
 
-def mkdir(dd):
-    if not os.path.exists(dd):
-        os.makedirs(dd)
 
 class Movies(object):
 
@@ -20,6 +17,7 @@ class Movies(object):
         ]
         for name in self._names:
             assert(os.path.exists(self._base_dir + "original/" + name))
+        self._emotions = ["_", "Anger", "Disgust", "Fear", "Happiness", "Sadness", "Surprise"]
          
     def base_dir(self):
         return self._base_dir
@@ -33,3 +31,16 @@ class Movies(object):
     def name2path(self, name):
         return self._base_dir + "original/" + name
 
+    def emotions(self):
+        return self._emotions 
+
+
+def mkdir(dd):
+    if not os.path.exists(dd):
+        os.makedirs(dd)
+
+
+def sort_listdir(dd):
+    ds = os.listdir(dd)
+    ds.sort()
+    return ds

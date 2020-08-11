@@ -217,7 +217,7 @@ def process_a_movie(vid_path, base_dir, frames_cnt, duration, model, \
 # get the label for manual annotation
 def get_file_for_category_annotation(label_file, out_file, out_file2):
     if not os.path.exists(label_file):
-        return
+        os.system("touch {}".format(label_file))
     fin = open(label_file)
     fout = open(out_file, 'w')
     fout2 = open(out_file2, 'a')
