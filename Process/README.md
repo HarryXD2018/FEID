@@ -54,8 +54,18 @@ After manual annotation, run the command and some files will be created:
     * `normalize_256/`: normalized faces
 
 ## Key Frame Selection
+Train an effective FER model on current dataset, and put the prediction scores in `${base_dir}/predcit_score/`
+```
+    python key_frame_selection.py
+```
+Run the command and some files will be created:
 
+* `${base_dir}/predict_score_smooth/`: smooth prediction scores
+* `${base_dir}/key_frames/`: indexs of key frames
 
 ## Intensity Annotation
-
-
+This step is a manual step. We display the clips in a website for intensity annotation. After all annotations are complete, put the label dir in `${base_dir}/label/`
+```
+    python intensity annotation
+```
+Run the command and generate annotated intensities in `${base_dir}/intensity/`
