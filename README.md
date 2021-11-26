@@ -16,8 +16,8 @@ The development repository for facial expression intensity estimation.
 | Surprise |![image](https://github.com/huochaitiantang/FEID/blob/master/Samples/surprise_1.gif) | ![image](https://github.com/huochaitiantang/FEID/blob/master/Samples/surprise_2.gif) |
 
 
-#### Concat Us
-* Concat us for the full dataset available. [Email](liangliu@buaa.edu.cn)
+#### Contact Us
+* Contact us for the full dataset available. [Email](chenhj2000@163.com)
 
 
 #### Disclaimer
